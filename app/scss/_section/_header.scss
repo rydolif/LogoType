@@ -1,0 +1,107 @@
+
+.header{
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	background: rgba($bg--dark, 0.8);
+	padding: 20px 0;
+	z-index: 1000;
+	transition: all .6s;
+
+	&__container{
+		@extend .list;
+		align-items: center;
+	}
+
+	a {
+		color: #ffffff;
+		font-family: $title;
+	}
+
+	&__logo {
+		font-size: 32px;
+		font-weight: 600;
+	}
+
+	&__nav {
+		font-size: 18px;
+		font-weight: 600;
+
+		ul {
+			@extend .list;
+		}
+
+		li {
+			margin-right: 30px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		a {
+			@extend .link;
+		}
+	}
+
+	&__info {
+		display: flex;
+		align-items: center;
+
+		p {
+			margin-right: 25px;
+
+			a, span {
+				display: block;
+				text-align: right;
+			}
+			
+			a {
+				font-size: 18px;
+				font-weight: 600;
+				color: $white;
+
+				&:hover,
+				&:focus {
+					color: $accent; 
+				}
+			}
+
+			span {
+				font-size: 16px;
+				color: $text--light;
+			}
+		}
+
+		&_btn {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 40px;
+			height: 40px;
+			background-color: $accent;
+			border-radius: 4px;
+			box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.16);
+
+			&:hover,
+			&:focus {
+				background-color: $accent--hover;
+			}
+		}
+	}
+
+	&--active {
+		padding: 10px 0;
+		background: rgba($bg--dark, 1);
+	}
+
+}
+
+
+//-------------------------------------------media--------------------------------------
+@media only screen and (max-width : 1170px) {
+	.container {
+		max-width: 992px;
+	}
+}

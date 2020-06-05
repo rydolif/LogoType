@@ -1,0 +1,122 @@
+
+
+.hero {
+	position: relative;
+
+	&__slide {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	&__container {
+		position: relative;
+	}
+
+	&__content {
+		padding: 285px 0;
+		margin: 0 auto;
+		max-width: 750px;
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: 64px;
+		line-height: 1.2;
+		font-family: $title;
+		margin-bottom: 5px;
+	}
+
+	&__text {
+		font-size: 18px;
+		margin-bottom: 25px;
+	}
+
+	&__button {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 100;
+		max-width: 1200px;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+
+		div {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 48px;
+			height: 48px;
+			border: 2px solid $white;
+			border-radius: 50%;
+			transition: all .6s;
+			cursor: pointer;
+
+			&::before {
+				content: '';
+				width: 12px;
+				height: 12px;
+				border-top: 2px solid $white;
+				border-left: 2px solid $white;
+			}
+
+			&:hover,
+			&:focus {
+				background-color: $accent;
+				border-color: $accent;
+			}
+		}
+
+		&_prev {
+			&::before {
+				transform: translate(3px, 0) rotate(-45deg);
+			}
+		}
+
+		&_next {
+			&::before {
+				transform: translate(-3px, 0) rotate(135deg);
+			}
+		}
+
+	}
+
+	&__pagination {
+		bottom: 30px !important;
+
+		span {
+			opacity: 1;
+			width: 16px;
+			height: 4px;
+			background-color: $text--light;
+			border-radius: 2px;
+			margin: 0 8px !important;
+			transition: all .6s;
+		}
+
+		.swiper-pagination-bullet-active {
+			background-color: $accent;
+		}
+	}
+
+	&__scrollbar {
+		left: 0 !important;
+		bottom: 0 !important;
+		width: 100% !important;
+
+		.swiper-scrollbar-drag {
+			background-color: $accent !important;
+		}
+	}
+
+}
+
+//-------------------------------------------media--------------------------------------
+
+@media only screen and (max-width : 1170px) {
+	.container {
+		max-width: 992px;
+	}
+}

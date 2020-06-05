@@ -1,0 +1,106 @@
+
+.developments {
+	padding: 65px 0;
+	background-image: url(../img/developments.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	&__title {
+		@extend h2;
+	}
+
+	&__text {
+		@extend .cards__text;
+		margin-bottom: 40px;
+	}
+
+	&__slider {
+		margin-bottom: 20px;
+	}
+
+	&__item {
+		overflow: hidden;
+		border-radius: 4px;
+		border: 1px solid transparent;
+		transition: all .6s;
+
+		&:hover,
+		&:focus {
+			border: 1px solid $border;
+
+			&::before {
+				background: linear-gradient(180deg, rgba(49, 49, 49, 0) 0%, rgba(49, 49, 49, 1) 100%);
+			}
+
+			.developments__item_description {
+				&::after {
+					background-color: $accent;
+					width: 100%;
+				}
+			}
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			display: block;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(180deg, rgba(49, 49, 49, 0) 0%, rgba(49, 49, 49, 0.8) 100%);
+			z-index: 1;
+			border-radius: 4px;
+			transition: all .6s;
+		}
+
+		img {
+			width: 100%;
+			z-index: 0;
+			border-radius: 5px;
+		}
+
+		&_description {
+			position: absolute;
+			bottom: 25px;
+			left: 25px;
+			right: 25px;
+			z-index: 2;
+			
+			&::after {
+				content: '';
+				display: block;
+				background-color: $border;
+				width: 24px;
+				height: 4px;
+				border-radius: 5px;
+				transition: all 1s;
+			}
+		}
+
+		&_title {
+			font-family: $title;
+			font-size: 18px;
+			font-weight: 600;
+			margin-bottom: 5px;
+			color: $white;
+		}
+
+		&_text {
+			color: $text--light;
+			margin-bottom: 15px;
+		}
+	}
+
+	&__nav {
+		@extend .hero__pagination;
+		height: 22px;
+		position: relative;
+		bottom: auto !important;
+		display: flex;
+		justify-content: center;
+	}
+}

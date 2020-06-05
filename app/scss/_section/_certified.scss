@@ -1,0 +1,52 @@
+
+
+.certified {
+
+	&__item {
+		padding: 25px;
+		border-radius: 4px;
+		background-color: $white;
+
+		&_img {
+			margin-bottom: 25px;
+			background-color: $bg--light;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		&_title {
+			font-size: 18px;
+			font-weight: 600;
+			font-family: $title;
+			margin-bottom: 10px;
+		}
+
+		&_download {
+			color: $text--light;
+
+			&:hover,
+			&:focus {
+				color: $accent;
+			}
+		}
+	}
+
+	&__nav {
+		@extend .reviews__nav;
+		padding-top: 25px;
+
+		&_button {
+			@extend .reviews__nav_button;
+		}
+
+		&_prev {
+			@extend .reviews__nav_prev;
+		}
+
+		&_next {
+			@extend .reviews__nav_next;
+		}
+	}
+}

@@ -1,0 +1,118 @@
+
+.reviews {
+	padding: 65px 0;
+
+	&__title {
+		@extend h2;
+	}
+
+	&__text {
+		@extend .cards__text;
+
+		a {
+			display: flex;
+			margin-top: 10px;
+			color: $accent;
+			font-weight: 500;
+			font-family: $title;
+
+			&:hover,
+			&:focus {
+				color: $accent--hover;
+
+				svg, path {
+					fill: $accent--hover;
+				}
+			}
+
+			svg {
+				margin-right: 10px;
+			}
+		}
+	}
+
+	&__slider {
+		margin-bottom: 25px;
+	}
+
+	&__item {
+		padding: 24px;
+		background-color: $white;
+		border-radius: 4px;
+		transition: all .6s;
+
+		&_text {
+			margin-bottom: 15px;
+		}
+
+		&_info {
+			img {
+				float: left;
+				margin-right: 15px;
+			}
+		}
+
+		&_name {
+			font-family: $title;
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 1.2;
+		}
+
+		&_place {
+			font-size: 16px;
+			color: $text--light;
+		}
+	}
+	
+	&__nav {
+		@extend .cards__nav;
+		padding-top: 0;
+		width: 100%;
+		justify-content: space-between;
+
+		&_pagination {
+			@extend .cards__nav_pagination;
+			min-width: 65px;
+			margin: 0 15px;
+		}
+
+		&_button {
+			display: flex;
+			align-items: center;
+			transition: all .6s;
+			color: $border;
+			outline: none;
+			
+			&:hover,
+			&:focus {
+				color: $accent;
+
+				span {
+					background-color: $accent;
+					border-color: $accent;
+				}
+			}
+
+			span {
+				@extend .cards__nav_button;
+			}
+
+			
+		}
+
+		&_prev {
+			span {
+				@extend .cards__nav_prev;
+				margin-right: 8px;
+			}
+		}
+
+		&_next {
+			span {
+				@extend .cards__nav_next;
+				margin-left: 8px;
+			}
+		}
+	}
+}
