@@ -1,6 +1,5 @@
 input, textarea, select{
 	width: 100%;
-	// min-width: 250px;
 	border: none;
 	border-bottom: 1px solid rgba($accent, .5);
 	outline: none;
@@ -9,32 +8,31 @@ input, textarea, select{
 	background-color: transparent;
 
 	&:focus:required:invalid{
-		border-color: red;
+		border-color: $accent;
 		outline: none;
 		box-shadow: none;
 		-webkit-appearance: none;
 	}
 
 	&:required:valid{
-		border-color: green;
+		border-color: $green;
 		outline: none;
 		box-shadow: none;
 		-webkit-appearance: none;
 	}
 
 	&::placeholder{
-		color: rgba(#292929, .5);
-		font-style: italic;
+		color: $text--light;
 	}
 }
 
 input, select {
-	height: 30px;
-	line-height: 30px;
+	height: 50px;
+	line-height: 50px;
 	padding: 0 8px;
 
 	&::placeholder {
-		line-height: 30px;
+		line-height: 50px;
 	}
 }
 

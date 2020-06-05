@@ -2,6 +2,14 @@
 .catalog {
 	padding: 65px 0;
 
+	&__slider {
+		margin-bottom: 15px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
 	&__tabs {
 		display: flex;
 		justify-content: space-between;
