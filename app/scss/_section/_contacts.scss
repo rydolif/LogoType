@@ -46,7 +46,15 @@
 	}
 
 	&__map {
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
 		width: 100%;
+
+		img {
+			width: 100%;
+			min-width: 1200px;
+		}
 	}
 
 }

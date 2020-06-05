@@ -9,6 +9,10 @@
 	z-index: 1000;
 	transition: all .6s;
 
+	&__hamburger {
+		display: none;
+	}
+
 	&__container{
 		@extend .list;
 		align-items: center;
@@ -94,14 +98,8 @@
 	&--active {
 		padding: 10px 0;
 		background: rgba($bg--dark, 1);
+		box-shadow: 0 0 7px 0 rgba($white, .5)
 	}
 
 }
 
-
-//-------------------------------------------media--------------------------------------
-@media only screen and (max-width : 1170px) {
-	.container {
-		max-width: 992px;
-	}
-}

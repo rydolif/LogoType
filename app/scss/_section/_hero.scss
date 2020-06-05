@@ -39,6 +39,7 @@
 		transform: translate(-50%, -50%);
 		z-index: 100;
 		max-width: 1200px;
+		padding: 0 15px;
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
@@ -111,12 +112,4 @@
 		}
 	}
 
-}
-
-//-------------------------------------------media--------------------------------------
-
-@media only screen and (max-width : 1170px) {
-	.container {
-		max-width: 992px;
-	}
 }

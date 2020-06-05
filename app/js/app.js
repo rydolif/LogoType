@@ -23,8 +23,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //------------------------slider-cards-----------------------------------
 	var swiper = new Swiper('.cards__slider', {
-		slidesPerView: 4,
-		spaceBetween: 20,
+		slidesPerView: 1,
+		spaceBetween: 15,
 		autoplay: {
 			delay: 5000,
 			disableOnInteraction: false,
@@ -37,13 +37,25 @@ document.addEventListener("DOMContentLoaded", function() {
 			nextEl: '.cards__nav_next',
 			prevEl: '.cards__nav_prev',
 		},
+		breakpoints: {
+			400: {
+				slidesPerView: 2,
+			},
+			767: {
+				slidesPerView: 3,
+			},
+			992: {
+				slidesPerView: 4,
+				spaceBetween: 20,
+			}
+		}
 	});
 
 //------------------------slider-catalog-----------------------------------
 	var swiper = new Swiper('.catalog__slider', {
-		slidesPerView: 4,
+		slidesPerView: 1,
 		// slidesPerColumn: 2,
-		spaceBetween: 30,
+		spaceBetween: 15,
 		pagination: {
 			el: '.catalog__nav_pagination',
 			type: 'fraction',
@@ -56,12 +68,24 @@ document.addEventListener("DOMContentLoaded", function() {
 			nextEl: '.catalog__nav_next',
 			prevEl: '.catalog__nav_prev',
 		},
+		breakpoints: {
+			400: {
+				slidesPerView: 2,
+			},
+			767: {
+				slidesPerView: 3,
+			},
+			992: {
+				slidesPerView: 4,
+				spaceBetween: 20,
+			}
+		}
 	});
 
 //------------------------slider-reviews-----------------------------------
 	var swiper = new Swiper('.reviews__slider', {
 		slidesPerView: 3,
-		spaceBetween: 30,
+		spaceBetween: 15,
 		autoplay: {
 			delay: 5000,
 			disableOnInteraction: false,
@@ -70,12 +94,23 @@ document.addEventListener("DOMContentLoaded", function() {
 			nextEl: '.reviews__nav_next',
 			prevEl: '.reviews__nav_prev',
 		},
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+			},
+			767: {
+				slidesPerView: 2,
+			},
+			992: {
+				slidesPerView: 3,
+			},
+		}
 	});
 
 //------------------------slider-developments-----------------------------------
 	var swiper = new Swiper('.developments__slider', {
-		slidesPerView: 3,
-		spaceBetween: 30,
+		slidesPerView: 1,
+		spaceBetween: 15,
 		autoplay: {
 			delay: 5000,
 			disableOnInteraction: false,
@@ -84,11 +119,20 @@ document.addEventListener("DOMContentLoaded", function() {
 			el: '.developments__nav_pagination',
 			clickable: true,
 		},
+		breakpoints: {
+			480: {
+				slidesPerView: 2,
+			},
+			992: {
+				slidesPerView: 3,
+				spaceBetween: 30,
+			},
+		}
 	});
 
-//------------------------slider-reviews-----------------------------------
+//------------------------slider-certified-----------------------------------
 	var swiper = new Swiper('.certified__slider', {
-		slidesPerView: 3,
+		slidesPerView: 1,
 		spaceBetween: 30,
 		autoplay: {
 			delay: 5000,
@@ -98,6 +142,15 @@ document.addEventListener("DOMContentLoaded", function() {
 			nextEl: '.certified__nav_next',
 			prevEl: '.certified__nav_prev',
 		},
+		breakpoints: {
+			400: {
+				slidesPerView: 2,
+				spaceBetween: 15,
+			},
+			767: {
+				slidesPerView: 3,
+			},
+		}
 	});
 
 //------------------------slider-video-----------------------------------
