@@ -185,13 +185,14 @@ document.addEventListener("DOMContentLoaded", function() {
 	});
 
 //-------------------------------modal---------------------------------------
-	$('.modal').popup({transition: 'all 0.3s'});
+	$('.modal').popup({transition: 'all 0.6s'});
 
 //------------------------------hamburger-----------------------------
 	$('.hamburger').click(function() {
 	  $(this).toggleClass('hamburger--active');
-	  $('.nav').toggleClass('nav--active');
-	  $('body').toggleClass('no-scroll');
+	  $('.header__nav').toggleClass('header__nav--active');
+	  $('.header').toggleClass('header--menu');
+	  // $('body').toggleClass('no-scroll');
 	});
 
 //----------------------------------------fixed----------------------------------
@@ -206,6 +207,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   if($(this).scrollTop()>20){
     $('.header').addClass('header--active');
-  }
+	}
+//-------------------------------------------time---------------------
 
 });

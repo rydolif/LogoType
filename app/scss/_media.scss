@@ -80,6 +80,23 @@
 		font-size: 16px;
 	}
 
+	.bunner {
+		&__title {
+			font-size: 44px;
+		}
+
+		&__subtitle {
+			font-size: 36px;
+		}
+
+		&__time {
+
+			b {
+				font-size: 40px;
+			}
+		}
+	}
+
 }
 
 
@@ -110,7 +127,8 @@
 		}
 
 		&__hamburger {
-			display: block;
+			display: flex;
+			align-items: center;
 		}
 
 		&__logo {
@@ -131,10 +149,48 @@
 			}
 		}
 
-	}
+		&__nav {
+			position: fixed;
+			left: 0;
+			right: 0;
+			top: 0;
+			background-color: $bg--dark;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			opacity: 0;
+			padding: 25px 0;
+			border-top: 1px solid $text--light;
+			z-index: -1;
 
-	.nav {
-		display: none;
+			ul {
+				max-width: 767px;
+				padding: 0 15px;
+				width: 100%;
+			}
+
+			li {
+				width: 23%;
+				margin-right: 2%;
+			}
+
+			&--active {
+				top: 80px;
+				opacity: 1;
+			}
+		}
+
+		&--menu {
+			background-color: $bg--dark;
+		}
+
+		&--active {
+			.header__nav--active {
+				top: 60px;
+			}
+		}
+
+
 	}
 
 	.hero {
@@ -146,7 +202,6 @@
 			padding: 160px 0 140px;
 		}
 	}
-
 
 	.benefits__item {
 		font-size: 14px;
@@ -181,6 +236,69 @@
 	}
 	
 
+	.modal {
+		padding: 30px;
+
+		&--developments {
+			&__img {
+				width: 100%;
+				text-align: center;
+				margin-bottom: 20px;
+
+				img {
+					max-width: 320px;
+					width: 100%;
+				}
+			}
+
+			&__text {
+				width: 100%;
+
+				h2 {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	.bunner {
+		background: linear-gradient(263.46deg, #313131 0%, #000000 100%);
+		padding: 30px 0;
+
+		&__description {
+			position: relative;
+			width: 100%;
+			text-align: center;
+			justify-content: center;
+			
+
+			svg {
+				position: absolute;
+				top: 50%;
+				left: 70%;
+				transform: translate(0, -50%);
+				z-index: 0  ;
+			}
+		}
+
+		&__title,
+		&__sub__title {
+			width: 100%;
+		}
+
+		&__time {
+			position: relative;
+			left: 50%;
+			transform: translate(-25%, 0%) rotate(0deg);
+			width: 100%;
+			
+			&_title {
+				transform: rotate(-2deg);
+			}
+		}
+	}
+
+
 }
 
 
@@ -208,8 +326,30 @@
 			}
 		}
 
+		&__nav {
+			top: -400px;
+
+			li {
+				width: 48%;
+				margin-bottom: 25px;
+				margin-right: 2%;
+
+				&:last-child {
+					margin-right: 2%;
+				}
+			}
+
+			&--active {
+				top: 50px;
+			}
+		}
+
 		&--active {
 			padding: 5px 0;
+
+			.header__nav--active {
+				top: 50px;
+			}
 		}
 	}
 
@@ -417,7 +557,7 @@
 		}
 
 		.btn {
-			margin: 0 auto;in: 0 auto;
+			margin: 0 auto;
 		}
 	}
 
@@ -489,6 +629,7 @@
 		font-size: 22px;
 		text-align: center;
 	}
+
 	.reviews__text a {
 		justify-content: center;
 	}
@@ -500,10 +641,79 @@
 	.doubt__list_number {
 		font-size: 36px;
 	}
+
+	
+	.bunner {
+		background: linear-gradient(263.46deg, #313131 0%, #000000 100%);
+		padding: 30px 0;
+
+		&__title {
+			font-size: 40px;
+		}
+
+		&__subtitle {
+			font-size: 28px;
+		}
+
+		&__time {
+			position: relative;
+			left: 0;
+			transform: translate(0, 0) rotate(0deg);
+			width: 100%;
+			background: none;
+			text-align: center;
+			padding-left: 0;
+			line-height: 1;
+
+			&::before {
+				content: '';
+				position: absolute;
+				left: 0;
+				display: block;
+				width: 100vw;
+				height: 100%;
+				background: linear-gradient(89.91deg, #D32F2F -0.16%, rgba(228, 56, 56, 0) 97.13%);
+				z-index: -1;
+				border-top-left-radius: 80px;
+				border-bottom-left-radius: 80px;
+			}
+
+			&_title {
+				margin-bottom: 0;
+				transform: rotate(0deg);
+			}
+
+			&_wrap {
+				height: auto;
+				transform: rotate(0deg);
+			}
+		}
+	}
 }
 
 
 @media only screen and (max-width : 480px) {
+	.header	{
+
+		&__nav {
+			li {
+				width: 100%;
+				margin-bottom: 25px;
+				margin-right: 0;
+		
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		
+			&--active {
+				top: 50px;
+			}
+		}
+
+	}
+
+	
 	.hero {
 
 		&__title {
@@ -543,10 +753,12 @@
 
 		ul {
 			border: 0;
+			justify-content: space-between;
 		}
 
 		li {
-			width: 50%;
+			width: 49%;
+			margin-bottom: 5px;
 		}
 
 		a {
@@ -578,5 +790,19 @@
 
 	.video__slider iframe {
 		width: 100%;
+	}
+
+	.btn, .cards__item_btn {
+		min-width: 100%;
+	}
+
+	.bunner {
+		&__time {
+			font-size: 18px;
+
+			b {
+				font-size: 30px;
+			}
+		}
 	}
 }

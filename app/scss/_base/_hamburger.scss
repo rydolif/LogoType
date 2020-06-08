@@ -1,10 +1,8 @@
 .hamburger {
-	display: none;
-	position: absolute;
-	right: 15px;
-	top: 55%;
+	position: relative;
 	padding: 0;
-	transform: translate(0, -50%);
+	height: 25px;
+	width: 32px;
 	border: none;
 	background-color: transparent;
 	transition: all .3s;
@@ -12,65 +10,52 @@
 	&:focus,
 	&:hover {
 		outline: none;
-		opacity: .7;
 	}
 
-	&__box {
-		position: relative;
-		display: inline-block;
-		width: 35px;
-		perspective: 80px;
-	}
-
-	&__item {
+	span {
 		position: absolute;
-		right: 0;
 		top: 0;
-		width: 35px;
 		height: 3px;
-		background-color: $text;
-		border-radius: 4px;
-		transition: all .2s;
-		bottom: 0;
+		display: block;
+		background-color: $accent;
+		border-radius: 3px;
+		transition: all .6s;
 
-		&::before{
-			content: "";
-			display: block;
-			position: absolute;
-			right: 0;
-			top: -10px;
-			background-color: $text;
-			width: 35px;
-			height: 3px;
-			transition: transform 0s 0.1s;
+		&:nth-child(1) {
+			width: 28px;
 		}
-	
-		&::after {
-			content: "";
-			display: block;
-			position: absolute;
-			right: 0;
-			top: -20px;
-			background-color: $text;
-			width: 35px;
-			height: 3px;
-			transition: transform 0s 0.1s;
+
+		&:nth-child(2) {
+			width: 20px;
+			top: 8px;
 		}
+
+		&:nth-child(3) {
+			top: 16px;
+			width: 12px;
+		}
+
 	}
 
 	&--active {
 		z-index: 1001;
 
 		span {
-			background-color: transparent;
 			transform: rotateY(180deg);
 
-			&::before {
-				transform: translate3d(0, 0px, 0) rotate(45deg);
+			&:nth-child(1) {
+				width: 28px;
+				transform: translate3d(0, 9px, 0) rotate(45deg);
 			}
 
-			&::after {
-				transform: translate3d(0, 10px, 0) rotate(-45deg);
+			&:nth-child(2) {
+				width: 28px;
+				transform: translate3d(0, 1px, 0) rotate(-45deg);
+			}
+
+			&:nth-child(3) {
+				width: 0;
+				opacity: 0;
 			}
 		}
 

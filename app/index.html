@@ -20,11 +20,13 @@
 	<header class="header">
 		<div class="header__container container">
 
-			<a href="#" class="header__hamburger">
-				<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path fill-rule="evenodd" clip-rule="evenodd" d="M2 7.5C2 6.67157 2.67157 6 3.5 6H28.5C29.3284 6 30 6.67157 30 7.5C30 8.32843 29.3284 9 28.5 9H3.5C2.67157 9 2 8.32843 2 7.5ZM2 16.5C2 15.6716 2.67157 15 3.5 15H20.5C21.3284 15 22 15.6716 22 16.5C22 17.3284 21.3284 18 20.5 18H3.5C2.67157 18 2 17.3284 2 16.5ZM3.5 24C2.67157 24 2 24.6716 2 25.5C2 26.3284 2.67157 27 3.5 27H12.5C13.3284 27 14 26.3284 14 25.5C14 24.6716 13.3284 24 12.5 24H3.5Z" fill="white"/>
-				</svg>
-			</a>
+			<div class="header__hamburger">
+				<button class=" hamburger" type="button">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
 
 			<a href="/" class="header__logo">Logotype</a>
 
@@ -308,6 +310,43 @@
 					<div class="cards__nav_pagination swiper-pagination"></div>
 					<div class="cards__nav_button cards__nav_next"></div>
 				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="bunner">
+		<div class="bunner__container container">
+
+			<div class="bunner__description">
+				<div>
+					<p class="bunner__title">Sale!</p>
+					<p class="bunner__subtitle">3 вещи по цене 2-х</p>
+				</div>
+
+				<svg width="89" height="89" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<circle cx="75.4494" cy="11.314" r="10.5" transform="rotate(-2 75.4494 11.314)" fill="#D32F2F" fill-opacity="0.2"/>
+					<circle cx="76.5661" cy="43.2943" r="10.5" transform="rotate(-2 76.5661 43.2943)" fill="#D32F2F" fill-opacity="0.2"/>
+					<circle cx="77.683" cy="75.2747" r="10.5" transform="rotate(-2 77.683 75.2747)" fill="#D32F2F" fill-opacity="0.2"/>
+					<circle cx="45.144" cy="60.4013" r="10.5" transform="rotate(-2 45.144 60.4013)" fill="#D32F2F" fill-opacity="0.3"/>
+					<circle cx="44.0273" cy="28.4207" r="10.5" transform="rotate(-2 44.0273 28.4207)" fill="#D32F2F" fill-opacity="0.3"/>
+					<circle cx="12.6052" cy="45.5282" r="10.5" transform="rotate(-2 12.6052 45.5282)" fill="#D32F2F" fill-opacity="0.5"/>
+				</svg>
+			</div>
+
+
+
+			<div class="bunner__time">
+				<p class="bunner__time_title">до конца акции</p>
+				<p class="bunner__time_wrap" id="getting-started">
+					<b class="dn"></b>
+					<span>дн</span>
+					<b class="ch"></b>
+					<span>ч</span>
+					<b class="mi"></b>
+					<span>м</span>
+					<b class="sc">с</b>
+					<span>с</span>
+				</p>
 			</div>
 		</div>
 	</div>
@@ -1059,7 +1098,7 @@
 			<div class="developments__slider swiper-container">
 				<div class="swiper-wrapper">
 
-					<a href="#" class="developments__item swiper-slide">
+					<a href="#" class="developments__item developments_open swiper-slide">
 						<img src="img/developments1.jpg" alt="">
 						<div class="developments__item_description">
 							<p class="developments__item_title">Заказ в 1 клик</p>
@@ -1069,7 +1108,7 @@
 						</div>
 					</a>
 
-					<a href="#" class="developments__item swiper-slide">
+					<a href="#" class="developments__item developments_open swiper-slide">
 						<img src="img/developments2.jpg" alt="">
 						<div class="developments__item_description">
 							<p class="developments__item_title">Доставим уже сегодня</p>
@@ -1079,7 +1118,7 @@
 						</div>
 					</a>
 
-					<a href="#" class="developments__item swiper-slide">
+					<a href="#" class="developments__item developments_open swiper-slide">
 						<img src="img/developments3.jpg" alt="">
 						<div class="developments__item_description">
 							<p class="developments__item_title">Вернем деньги, <br>если не подошло</p>
@@ -1089,7 +1128,7 @@
 						</div>
 					</a>
 
-					<a href="#" class="developments__item swiper-slide">
+					<a href="#" class="developments__item developments_open swiper-slide">
 						<img src="img/developments2.jpg" alt="">
 						<div class="developments__item_description">
 							<p class="developments__item_title">Заказ в 1 клик</p>
@@ -1099,7 +1138,7 @@
 						</div>
 					</a>
 
-					<a href="#" class="developments__item swiper-slide">
+					<a href="#" class="developments__item developments_open swiper-slide">
 						<img src="img/developments2.jpg" alt="">
 						<div class="developments__item_description">
 							<p class="developments__item_title">Доставим уже сегодня</p>
@@ -1109,7 +1148,7 @@
 						</div>
 					</a>
 
-					<a href="#" class="developments__item swiper-slide">
+					<a href="#" class="developments__item developments_open swiper-slide">
 						<img src="img/developments3.jpg" alt="">
 						<div class="developments__item_description">
 							<p class="developments__item_title">Вернем деньги, <br>если не подошло</p>
@@ -1119,7 +1158,7 @@
 						</div>
 					</a>
 
-					<a href="#" class="developments__item swiper-slide">
+					<a href="#" class="developments__item developments_open swiper-slide">
 						<img src="img/developments2.jpg" alt="">
 						<div class="developments__item_description">
 							<p class="developments__item_title">Заказ в 1 клик</p>
@@ -1188,15 +1227,15 @@
 			</p>
 
 			<div class="gallery__grid">
-				<div class="gallery__item gallery__item_50"><img src="img/gallery1.jpg" alt=""></div>
-				<div class="gallery__item gallery__item_25"><img src="img/gallery2.jpg" alt=""></div>
-				<div class="gallery__item gallery__item_25"><img src="img/gallery3.jpg" alt=""></div>
-				<div class="gallery__item gallery__item_25"><img src="img/gallery4.jpg" alt=""></div>
-				<div class="gallery__item gallery__item_25"><img src="img/gallery5.jpg" alt=""></div>
-				<div class="gallery__item gallery__item_12"><img src="img/gallery6.jpg" alt=""></div>
-				<div class="gallery__item gallery__item_12"><img src="img/gallery7.jpg" alt=""></div>
-				<div class="gallery__item gallery__item_12"><img src="img/gallery8.jpg" alt=""></div>
-				<div class="gallery__item gallery__item_12"><img src="img/gallery9.jpg" alt=""></div>
+				<a href="img/gallery1.jpg" data-fancybox="gallery" class="gallery__item gallery__item_50"><img src="img/gallery1.jpg" alt=""></a>
+				<a href="img/gallery2.jpg" data-fancybox="gallery" class="gallery__item gallery__item_25"><img src="img/gallery2.jpg" alt=""></a>
+				<a href="img/gallery3.jpg" data-fancybox="gallery" class="gallery__item gallery__item_25"><img src="img/gallery3.jpg" alt=""></a>
+				<a href="img/gallery4.jpg" data-fancybox="gallery" class="gallery__item gallery__item_25"><img src="img/gallery4.jpg" alt=""></a>
+				<a href="img/gallery5.jpg" data-fancybox="gallery" class="gallery__item gallery__item_25"><img src="img/gallery5.jpg" alt=""></a>
+				<a href="img/gallery6.jpg" data-fancybox="gallery" class="gallery__item gallery__item_12"><img src="img/gallery6.jpg" alt=""></a>
+				<a href="img/gallery7.jpg" data-fancybox="gallery" class="gallery__item gallery__item_12"><img src="img/gallery7.jpg" alt=""></a>
+				<a href="img/gallery8.jpg" data-fancybox="gallery" class="gallery__item gallery__item_12"><img src="img/gallery8.jpg" alt=""></a>
+				<a href="img/gallery9.jpg" data-fancybox="gallery" class="gallery__item gallery__item_12"><img src="img/gallery9.jpg" alt=""></a>
 			</div>
 
 			<a href="#" class="gallery__more">
@@ -1583,55 +1622,58 @@
 		</div>
 	</footer>
 
-	<div class="modal" id="order">
-		<form class="form" method="post">
+	<div class="modal" id="developments">
+		<button class="modal__close developments_close" type="button">
+			<span></span>
+			<span></span>
+		</button>
 
-			<button class="modal__close order_close" type="button">
-				<span></span>
-				<span></span>
-			</button>
-
-			<p>Укажите ваши данные. <br>Наши специалисты свяжутся с вами в кратчайшие сроки.</p>
-			<input type="hidden" name="subject" value="Узнать подробнее!">
-
-			<div class="modal__list">
-				<div class="">
-					<input type="text" name="name" placeholder="Ваше имя" required>
-				</div>
-				<div class="">
-					<input type="tel" name="phone" placeholder="Ваш телефон" required>
-				</div>
+		<div class="modal--developments">
+			<div class="modal--developments__img">
+				<img src="img/certified1.jpg" alt="">
 			</div>
-
-			<div class="modal__btn">
-				<button type="submit" class="btn btn--dark" name="submit">Отправить</button>
+			<div class="modal--developments__text">
+				<h2>Lorem ipsum dolor sit amet.</h2>
+				<p>
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. In soluta pariatur doloremque 
+					officiis reiciendis possimus quidem velit at. Recusandae suscipit eius fuga quo repudiandae 
+					eos ducimus minus deserunt sunt nam optio qui sequi officiis, maiores provident. Incidunt ea ipsum aut?
+				</p>
+				<p>
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem veniam veritatis, 
+					eligendi iusto, dolore laudantium natus perspiciatis id sed nesciunt odit velit. Possimus 
+					ipsa dignissimos doloremque illum libero? Dicta atque perspiciatis dignissimos ex quod recusandae 
+					tenetur dolores blanditiis necessitatibus. Itaque ullam ut labore quia facilis beatae numquam 
+					obcaecati ea aut quos praesentium maxime fuga voluptatibus, sapiente possimus inventore vitae harum? 
+					Repellendus quia magnam consectetur ullam dolore, quo molestias laudantium animi amet excepturi 
+					repellat deleniti temporibus commodi est, sit modi doloribus quos alias delectus eligendi 
+					veniam, enim adipisci? Aliquid, fugiat beatae rerum dignissimos dolor quos, quidem earum 
+					obcaecati dolore doloribus adipisci.
+				</p>
 			</div>
+		</div>
 
-			<div class="modal__checkbox">
-				<input type="checkbox" id="remember">
-				<label for="remember" class="label">Оставляя свои данные я соглашаюсь с <a href="#">Политикой конфиденциальности</a></label>	
-			</div>
-		</form>
-	</div>
-
-	<div class="modal modal--thanks" id="thanks">
-		<form class="form" method="post">
-
-			<button class="modal__close thanks_close" type="button">
-				<span></span>
-				<span></span>
-			</button>
-
-			<p class="modal--thanks__title">спасибо!</p>
-
-			<p>
-				Ваша заявка принята. <br> Наши специалисты свяжутся с вами <br>в кратчайшие сроки.
-			</p>
-
-		</form>
 	</div>
 
 	<script src="js/app.min.js"></script>
+	
+	<script type="text/javascript">
+		$("#getting-started")
+		.countdown("2020/08/01", function(event) {
+			$("#getting-started .dn").text(
+				event.strftime('%D'),
+			);
+			$("#getting-started .ch").text(
+				event.strftime('%H'),
+			);
+			$("#getting-started .mi").text(
+				event.strftime('%M'),
+			);
+			$("#getting-started .sc").text(
+				event.strftime('%S'),
+			);
+		});
+	</script>
 
 </body>
 </html>

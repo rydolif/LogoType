@@ -1,0 +1,68 @@
+.bunner {
+	position: relative;
+	background-image: url(../img/bunner.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-top: 55px;
+	padding-bottom: 45px;
+	color: #ffffff;
+	overflow: hidden;
+
+	&__description {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: center;
+		width: 47%;
+	}
+
+	&__title {
+		font-family: $title;
+		color: #ffffff;
+		font-size: 52px;
+		font-weight: 600;
+		line-height: 1.2;
+	}
+
+	&__subtitle {
+		font-family: $title;
+		font-size: 40px;
+		color: #ffffff;
+		font-weight: 300;
+		line-height: 1.2;
+	}
+
+	&__time {
+		position: absolute;
+		top: 20px;
+		left: 50%;
+		width: 50vw;
+		background-position: center;
+		font-family: $title;
+		font-size: 24px;
+		transform: rotate(-2deg);
+		background-image: url(../img/bunner--red.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		padding-left: 35px;
+
+		&_title {
+			margin-bottom: 5px;
+		}
+		
+		&_wrap {
+			height: 90px;
+			transform: rotate(-2deg);
+		}
+
+		b {
+			font-size: 48px;
+			font-weight: 600;
+			line-height: 60px;
+		}
+		
+	}
+}
