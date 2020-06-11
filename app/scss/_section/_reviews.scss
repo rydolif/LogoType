@@ -40,6 +40,10 @@
 		background-color: $white;
 		border-radius: 4px;
 		transition: all .6s;
+		min-height: 245px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 
 		&_text {
 			margin-bottom: 15px;

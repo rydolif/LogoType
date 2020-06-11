@@ -17,7 +17,7 @@
 		top: 0;
 		height: 3px;
 		display: block;
-		background-color: $accent;
+		background-color: $white;
 		border-radius: 3px;
 		transition: all .6s;
 
@@ -42,6 +42,7 @@
 
 		span {
 			transform: rotateY(180deg);
+			background-color: $accent;
 
 			&:nth-child(1) {
 				width: 28px;

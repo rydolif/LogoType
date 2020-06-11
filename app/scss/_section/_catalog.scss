@@ -4,6 +4,8 @@
 
 	&__slider {
 		margin-bottom: 15px;
+		width: 100%;
+		height: 900px;
 
 		&:last-child {
 			margin-bottom: 0;
@@ -42,8 +44,16 @@
 		}
 	}
 
+	&__wrap {
+		position: relative;
+	}
+
 	&__nav {
 		@extend .cards__nav;
+		position: absolute;
+		right: 0;
+		top: -85px;
+		padding-top: 0;
 
 		&_pagination {
 			@extend .cards__nav_pagination;

@@ -2,6 +2,10 @@
 .footer {
 	background-color: $bg--dark;
 
+	&__logo {
+		width: 25%;
+	}
+	
 	&__info,
 	&__copy {
 		@extend .list;
@@ -32,6 +36,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
+		justify-content: center;
 
 		a {
 			display: flex;

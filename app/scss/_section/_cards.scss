@@ -18,6 +18,7 @@
 		border-radius: 4px;
 		overflow: hidden;
 		transition: all .6s;
+		height: calc((100% - 30px) / 2);
 
 		&:hover,
 		&:focus {

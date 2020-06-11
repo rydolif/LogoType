@@ -20,6 +20,7 @@
 	}
 
 	&__item {
+		display: block;
 		margin: 0.2%;
 
 		img {
@@ -44,6 +45,7 @@
 		align-items: center;
 		font-size: 18px;
 		color: $accent;
+		cursor: pointer;
 
 		&:hover,
 		&:focus {

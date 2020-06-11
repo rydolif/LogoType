@@ -23,6 +23,7 @@ input, textarea, select{
 
 	&::placeholder{
 		color: $text--light;
+		font-weight: 400;
 	}
 }
 

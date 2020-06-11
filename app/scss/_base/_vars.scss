@@ -130,7 +130,7 @@ button {
 	&::before {
 		content: "";
 		position: absolute;
-		bottom: -1px;
+		bottom: -3px;
 		left: 0;
 		height: 2px;
 		width: 8px;
@@ -140,8 +140,11 @@ button {
 
 	&:hover,
 	&:focus {
+		color: $accent;
+
 		&::before {
 			width: 100%;
+			background-color: $accent;
 		}
 	}
 }

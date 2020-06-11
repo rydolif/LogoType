@@ -75,9 +75,16 @@
 		}
 	}
 
-	.catalog__tabs a {
-		padding: 0 15px;
-		font-size: 16px;
+	.catalog {
+
+		&__slider {
+			height: 932px;
+		}
+
+		&__tabs a {
+			padding: 0 15px;
+			font-size: 16px;
+		}
 	}
 
 	.bunner {
@@ -203,6 +210,24 @@
 		}
 	}
 
+	.catalog {
+
+		&__tabs {
+			margin-bottom: 20px;
+			justify-content: center;
+		}
+
+		&__nav {
+			position: relative;
+			top: 0;
+			margin-bottom: 15px;
+		}
+
+		&__slider {
+			height: auto;
+		}
+	}
+
 	.benefits__item {
 		font-size: 14px;
 
@@ -298,7 +323,29 @@
 		}
 	}
 
+	.footer {
+		&__logo {
+			width: auto;
+			text-align: left;
+		}
 
+		&__info_info {
+			justify-content: flex-end;
+		}
+
+		&__copy {
+			text-align: center;
+
+			p {
+				width: 100%;
+				margin-bottom: 10px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
 }
 
 
@@ -381,6 +428,10 @@
 		}
 	}
 
+	.reviews__item {
+		min-height: 100%;
+	}
+
 	.cards,
 	.catalog,
 	.reviews,
@@ -400,7 +451,7 @@
 	.cards__text {
 		margin-bottom: 20px;
 	}
-	
+
 	.catalog__tabs {
 		justify-content: center;
 		margin-bottom: 15px;
@@ -515,6 +566,11 @@
 			margin-bottom: 10px;
 		}
 
+		&__soc {
+			margin-bottom: 15px;
+		}
+
+
 		&__info,
 		&__copy {
 			flex-direction: column;
@@ -526,6 +582,18 @@
 
 			p {
 				margin-bottom: 10px;
+			}
+		}
+		
+		&__info {
+
+			&_info {
+				width: 100%;
+			}
+
+			p {
+				display: block;
+				margin-bottom: 0 !important;
 			}
 		}
 	}
@@ -605,7 +673,6 @@
 		}
 		&__text {
 			width: 100%;
-			text-align: center;
 
 			&_more {
 				justify-content: center;
