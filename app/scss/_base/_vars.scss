@@ -41,23 +41,6 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	counter-reset: section;
-
-	--white: #fff;
-
-	--text: #313131;
-	--text--light: #9D9D9D;
-
-	--blue:  #1E88E5;
-	--yelow: #FFB300;
-	--sea: #00BCD4;
-
-	--green: #33B020;
-	--green--hover: #2B911B;
-
-	--bg--light: #F3F3F3;
-	--bg--dark: #313131;
-
-	--border: #D4D4D4;
 }
 
 .accent--red {
@@ -192,6 +175,19 @@ button {
 .bg--dark {
 	background-color: $bg--dark;
 	color: #ffffff;
+
+	.policy {
+		a {
+			color: $white;
+			border-color: $white;
+
+			&:hover,
+			&:focus {
+				color: $border;
+				border-color: $border;
+			}
+		}
+	}
 }
 
 .bg--light {
