@@ -48,9 +48,11 @@
 
 		&_text {
 			margin-bottom: 15px;
+			color: $text;
 		}
 
 		&_info {
+			color: $text;
 			img {
 				float: left;
 				margin-right: 15px;
@@ -59,6 +61,7 @@
 
 		&_name {
 			font-family: $title;
+			color: $text;
 			font-weight: 600;
 			font-size: 18px;
 			line-height: 1.2;
@@ -88,7 +91,8 @@
 			transition: all .6s;
 			color: $border;
 			outline: none;
-			
+			font-family: $title;
+
 			&:hover,
 			&:focus {
 				color: var(--accent);
@@ -117,6 +121,32 @@
 			span {
 				@extend .cards__nav_next;
 				margin-left: 8px;
+			}
+		}
+	}
+
+	&--dark {
+		.reviews__text a {
+			color: #ffffff;
+
+			svg, path {
+				fill: $white;
+			}
+
+			&:hover,
+			&:focus {
+				color: $border;
+
+				svg, path {
+					fill: $border;
+				}
+			}
+		}
+
+		.reviews__item {
+			&:hover,
+			&:focus {
+				box-shadow: 0px 4px 24px rgba(255, 255, 255, 0.32);
 			}
 		}
 	}
