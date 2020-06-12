@@ -1,6 +1,7 @@
 
 
 .certified {
+	@extend .reviews;
 
 	&__slider {
 		padding: 15px;
@@ -31,14 +32,15 @@
 			font-weight: 600;
 			font-family: $title;
 			margin-bottom: 10px;
+			color: $text;
 		}
 
 		&_download {
-			color: $text--light;
+			color: $text--light !important;
 
 			&:hover,
 			&:focus {
-				color: var(--accent);
+				color: var(--accent) !important;
 			}
 		}
 	}
@@ -57,6 +59,15 @@
 
 		&_next {
 			@extend .reviews__nav_next;
+		}
+	}
+
+	&--dark {
+		.certified__item {
+			&:hover,
+			&:focus {
+				box-shadow: 0px 4px 24px rgba(255, 255, 255, 0.32);
+			}
 		}
 	}
 }
