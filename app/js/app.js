@@ -47,6 +47,32 @@ document.addEventListener("DOMContentLoaded", function() {
 		}
 	});
 
+	var swiper = new Swiper('.cards__slider--three-block', {
+		slidesPerView: 1,
+		spaceBetween: 15,
+		pagination: {
+			el: '.cards__nav_pagination',
+			type: 'fraction',
+		},
+		navigation: {
+			nextEl: '.cards__nav_next',
+			prevEl: '.cards__nav_prev',
+		},
+		breakpoints: {
+			576: {
+				slidesPerView: 2,
+			},
+			992: {
+				slidesPerView: 3,
+				spaceBetween: 15,
+			},
+			1200: {
+				slidesPerView: 3,
+				spaceBetween: 30,
+			}
+		}
+	});
+
 //------------------------slider-catalog-----------------------------------
 	$(".tabs__wrap").each(function(index, el) {
     $(el).addClass('tabs__wrap-' + index);

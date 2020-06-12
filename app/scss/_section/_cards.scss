@@ -10,7 +10,7 @@
 	&__text {
 		font-size: 16px;
 		color: $text--light;
-		margin-bottom: 50px;
+		margin-bottom: 30px;
 	}
 
 	&__item {
@@ -85,6 +85,8 @@
 		}
 
 		&_price {
+			display: flex;
+			align-items: center;
 			font-family: $title;
 			display: flex;
 			font-size: 18px;
@@ -95,6 +97,7 @@
 				margin-right: 12px;
 				color: $text--light;
 				font-weight: 500;
+				font-size: 16px;
 			}
 
 			&--sale {
@@ -112,11 +115,14 @@
 
 	}
 
+	.swiper-wrapper {
+		margin: 15px 0;
+	}
+
 	&__nav {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		padding-top: 15px;
 		font-size: 18px;
 		font-weight: 600;
 
@@ -169,6 +175,51 @@
 		&_prev {
 			&::before {
 				transform: translate(1px, 0) rotate(-135deg);
+			}
+		}
+	}
+
+	&__slider--three-block {
+
+		.cards__item {
+			border: 1px solid #9D9D9D;
+
+			&:hover,
+			&:focus {
+				border-color: var(--accent);
+				.cards__item_btn {
+					color: $white;
+				}
+			}
+
+			&_price {
+				margin-bottom: 0;
+			}
+
+			&_btn {
+				position: relative;
+				right: -27px;
+				bottom: 0;
+				border-radius: 4px;
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+				border-top-right-radius: 0;
+				min-width: fit-content;
+				padding: 0 30px;
+				max-width: max-content;
+				border-top: 1px solid $text--light;
+				border-left: 1px solid $text--light;
+				border-bottom: none;
+				border-right: none;
+				opacity: 1;
+				background-color: $white;
+				color: $text--light;
+				font-weight: 500;
+
+				&:hover,
+				&:focus {
+					color: $white;
+				}
 			}
 		}
 	}

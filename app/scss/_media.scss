@@ -56,12 +56,26 @@
 				opacity: 1;
 			}
 		}
+
 		&__text {
 			br {
 				display: none;
 			}
 		}
-		
+
+		&__slider--three-block {
+			.cards__item {
+
+				&_price {
+					justify-content: space-between;
+				}
+
+				&_btn {
+					right: -15px;
+					padding: 0 10px;
+				}
+			}
+		}
 	}
 
 	.subscription {
@@ -447,8 +461,22 @@
 		padding-top: 40px;
 	}
 
-	.cards__text {
-		margin-bottom: 20px;
+	.cards {
+		&__text {
+			margin-bottom: 20px;
+		}
+
+		&__slider--three-block {
+			.cards__item {
+	
+				&_price {
+					span {
+						display: flex;
+						flex-wrap: wrap;
+					}
+				}
+			}
+		}
 	}
 
 	.catalog__tabs {
