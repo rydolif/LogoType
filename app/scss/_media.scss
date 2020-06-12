@@ -359,6 +359,10 @@
 			}
 		}
 	}
+
+	.doubt__list--big .doubt__list_item {
+		width: 48%;
+	}
 }
 
 
@@ -899,5 +903,9 @@
 				font-size: 30px;
 			}
 		}
+	}
+
+	.doubt__list--big .doubt__list_item {
+		width: 100%;
 	}
 }

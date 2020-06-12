@@ -24,6 +24,7 @@
 		&_item {
 			width: 48%;
 			margin-bottom: 65px;
+			z-index: 1;
 		}
 
 		&_number {
@@ -57,7 +58,14 @@
 			font-size: 18px;
 			font-weight: 600;
 			margin-bottom: 5px;
-			background-color: $white;
+		}
+
+		&--big {
+			width: 100%;
+
+			.doubt__list_item {
+				width: 31%;
+			}
 		}
 	}
 
@@ -112,6 +120,43 @@
 				margin-right: 8px;
 				fill: var(--accent--hover);
 			}
+		}
+	}
+
+	&--dark {
+		.doubt__list_number span {
+			background-color: $bg--dark;
+		}
+
+		.doubt__download_down {
+			svg, path {
+				fill: $white;
+			}
+
+			&:hover,
+			&:focus {
+				color: $border;
+
+				svg {
+					fill: $border;
+				}
+				
+			}
+		}
+	}
+
+	&--icon {
+		svg {
+			position: relative;
+			top: 0;
+		}
+	}
+
+	&--img {
+		img {
+			width: 100%;
+			margin-bottom: 15px;
+			border-radius: 4px;
 		}
 	}
 }
