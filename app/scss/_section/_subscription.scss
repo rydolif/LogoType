@@ -46,4 +46,10 @@
 			}
 		}
 	}
+
+	&--dark {
+		.subscription__title {
+			color: $white;
+		}
+	}
 }

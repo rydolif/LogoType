@@ -6,6 +6,7 @@
 	&__title {
 		@extend h2;
 	}
+
 	&__text {
 		@extend .cards__text;
 		margin-bottom: 45px;
@@ -46,6 +47,7 @@
 		font-size: 18px;
 		color: var(--accent);
 		cursor: pointer;
+		transition: all .6s;
 
 		&:hover,
 		&:focus {
@@ -59,6 +61,25 @@
 		svg, path {
 			margin-right: 10px;
 			fill: var(--accent);
+		}
+	}
+
+	&--dark {
+		.gallery__more {
+			color: $white;
+
+			svg, path {
+				fill: $white;
+			}
+
+			&:hover,
+			&:focus {
+				color: $border;
+
+				svg, path {
+					fill: $border;
+				}
+			}
 		}
 	}
 
