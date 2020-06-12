@@ -60,14 +60,19 @@ body {
 	--border: #D4D4D4;
 }
 
-.red {
+.accent--red {
 	--accent: rgba(211, 47, 47, 1);
 	--accent--hover: rgba(171, 36, 39, 1);
 }
 
-.green {
+.accent--green {
 	--accent: rgba(51, 176, 32, 1);
 	--accent--hover: rgba(43, 145, 27, 1);
+}
+
+.accent--blue {
+	--accent: rgba(0, 188, 212, 1);
+	--accent--hover: rgba(30, 136, 229, 1);
 }
 
 
