@@ -40,6 +40,7 @@
 			color: var(--accent);
 			margin-bottom: 15px;
 			cursor: pointer;
+			transition: all .6s;
 
 			&:hover,
 			&:focus {
@@ -65,6 +66,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		color: $text;
 
 		&:hover,
 		&:focus {
@@ -78,11 +80,32 @@
 		&_title {
 			font-weight: 600;
 			margin-bottom: 3px !important;
+			color: $text;
 		}
 
 		&_text {
 			font-size: 14px;
 			margin-bottom: 0 !important;
+			color: $text;
+		}
+	}
+
+	&--dark {
+		.about__text_more {
+			color: #ffffff;
+
+			svg, path {
+				fill: $white;
+			}
+
+			&:hover,
+			&:focus {
+				color: $border;
+
+				svg, path {
+					fill: $border;
+				}
+			}
 		}
 	}
 }

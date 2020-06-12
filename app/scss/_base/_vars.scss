@@ -121,6 +121,10 @@ button {
 	cursor: pointer;
 }
 
+svg, path {
+	transition: all .6s;
+}
+
 
 .no-scroll {
 	overflow: hidden;
