@@ -1,6 +1,5 @@
 .bunner {
 	position: relative;
-	background-image: url(../img/bunner.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -9,6 +8,27 @@
 	color: #ffffff;
 	overflow: hidden;
 
+	&__decor {
+		position: relative;
+			
+		&::before,
+		&::after {
+			content: url(../img/bubble.png);
+			position: absolute;
+		}
+
+		&::before {
+			right: 105%;
+			top: 25px;
+			transform: rotate(-180deg);
+		}
+
+		&::after {
+			left: 105%;
+			top: 0;
+		}
+	}
+
 	&__description {
 		position: relative;
 		display: flex;
@@ -16,6 +36,22 @@
 		flex-wrap: wrap;
 		align-items: center;
 		width: 47%;
+		
+		&_sale {
+			display: flex;
+			align-items: center;
+		}
+
+		&_percent {
+			font-size: 96px;
+			font-weight: 600;
+		}
+
+		&_text {
+			font-size: 32px;
+			padding-left: 10px;
+			line-height: 1.1;
+		}
 	}
 
 	&__title {
@@ -64,5 +100,30 @@
 			line-height: 60px;
 		}
 		
+	}
+
+	&--black {
+		background-image: url(../img/bunner--bg.png);
+
+		.bunner__decor {
+			&::before,
+			&::after {
+				content: url(../img/bubble--red.png);
+			}
+		}
+	}
+
+	&--red {
+		background-image: url(../img/bunner--bg-red.png);
+	}
+
+	&--sale {
+		padding-top: 45px;
+
+		.bunner__description {
+			width: 100%;
+			transform: rotate(-2deg);
+			font-family: $title;
+		}
 	}
 }

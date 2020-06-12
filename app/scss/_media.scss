@@ -300,15 +300,28 @@
 	}
 
 	.bunner {
-		background: linear-gradient(263.46deg, #313131 0%, #000000 100%);
 		padding: 30px 0;
+
+		&--black {
+			background: linear-gradient(263.46deg, #313131 0%, #000000 100%) !important;
+		}
+		
+		&--red {
+			background: linear-gradient(263.46deg, #E43838 0%, #A62424 100%) !important;
+		}
 
 		&__description {
 			position: relative;
 			width: 100%;
 			text-align: center;
 			justify-content: center;
-			
+
+			&_percent {
+				font-size: 72px;
+			}
+			&_text {
+				font-size: 24px;
+			}
 
 			svg {
 				position: absolute;
@@ -334,6 +347,7 @@
 				transform: rotate(-2deg);
 			}
 		}
+
 	}
 
 	.footer {
@@ -741,9 +755,7 @@
 		font-size: 36px;
 	}
 
-	
 	.bunner {
-		background: linear-gradient(263.46deg, #313131 0%, #000000 100%);
 		padding: 30px 0;
 
 		&__title {
@@ -759,7 +771,7 @@
 			left: 0;
 			transform: translate(0, 0) rotate(0deg);
 			width: 100%;
-			background: none;
+			background: none !important;
 			text-align: center;
 			padding-left: 0;
 			line-height: 1;
@@ -785,6 +797,13 @@
 			&_wrap {
 				height: auto;
 				transform: rotate(0deg);
+			}
+		}
+
+
+		&--sale {
+			.bunner__time::before {
+				background: linear-gradient(359.68deg, #FBA500 47.79%, rgba(251, 196, 1, 0) 99.72%);
 			}
 		}
 	}
