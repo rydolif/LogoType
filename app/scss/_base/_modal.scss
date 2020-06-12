@@ -57,9 +57,13 @@
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		
+
+		p {
+			margin-bottom: 15px;
+		}
+
 		&__img {
-			width: 37%;
+			width: 39%;
 
 			img {
 				width: 100%;
@@ -68,11 +72,8 @@
 		}
 
 		&__text {
-			width: 60%;
+			width: 58%;
 
-			p {
-				margin-bottom: 10px;
-			}
 		}
 	}
 

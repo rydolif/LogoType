@@ -1,7 +1,6 @@
 
 .developments {
 	padding: 65px 0;
-	background-image: url(../img/developments.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -102,5 +101,24 @@
 		bottom: auto !important;
 		display: flex;
 		justify-content: center;
+	}
+
+	&--dark {
+		position: relative;
+
+		h2 {
+			color: #ffffff;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: $bg--dark;
+			z-index: -1;
+		}
 	}
 }
