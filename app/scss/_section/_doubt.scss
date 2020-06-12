@@ -45,6 +45,10 @@
 				top: -16px;
 				left: 0;
 				z-index: -1;
+				
+				circle {
+					stroke: var(--accent);
+				}
 			}
 		}
 
@@ -84,7 +88,7 @@
 
 			&:hover,
 			&:focus {
-				color: $accent;
+				color: var(--accent);
 			}
 		}
 
@@ -93,15 +97,20 @@
 			font-weight: 500;
 			font-family: $title;
 			line-height: 1.4;
-			color: $accent;
+			color: var(--accent);
+
+			svg, path {
+				fill: var(--accent);
+			}
 
 			&:hover,
 			&:focus {
-				color: $accent--hover;
+				color: var(--accent--hover);
 			}
 			
-			svg {
+			svg, path {
 				margin-right: 8px;
+				fill: var(--accent--hover);
 			}
 		}
 	}

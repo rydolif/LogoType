@@ -12,21 +12,22 @@
 		a {
 			display: flex;
 			margin-top: 10px;
-			color: $accent;
+			color: var(--accent);
 			font-weight: 500;
 			font-family: $title;
 
 			&:hover,
 			&:focus {
-				color: $accent--hover;
+				color: var(--accent--hover);
 
 				svg, path {
-					fill: $accent--hover;
+					fill: var(--accent--hover);
 				}
 			}
 
-			svg {
+			svg, path {
 				margin-right: 10px;
+				fill: var(--accent);
 			}
 		}
 	}
@@ -90,11 +91,11 @@
 			
 			&:hover,
 			&:focus {
-				color: $accent;
+				color: var(--accent);
 
 				span {
-					background-color: $accent;
-					border-color: $accent;
+					background-color: var(--accent);
+					border-color: var(--accent);
 				}
 			}
 

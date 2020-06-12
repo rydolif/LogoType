@@ -42,7 +42,7 @@
 
 		span {
 			transform: rotateY(180deg);
-			background-color: $accent;
+			background-color: var(--accent);
 
 			&:nth-child(1) {
 				width: 28px;

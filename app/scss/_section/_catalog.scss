@@ -39,7 +39,7 @@
 		}
 
 		.active {
-			background-color: $accent;
+			background-color: var(--accent);
 			color: $white;
 		}
 	}

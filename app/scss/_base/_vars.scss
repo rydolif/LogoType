@@ -26,6 +26,7 @@ $bg--dark: #313131;
 $border: #D4D4D4;
 //---------------------end-color---------------------
 
+
 body {
 	overflow-x: hidden;
 	position: relative;
@@ -40,10 +41,38 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	counter-reset: section;
+
+	--white: #fff;
+
+	--text: #313131;
+	--text--light: #9D9D9D;
+
+	--blue:  #1E88E5;
+	--yelow: #FFB300;
+	--sea: #00BCD4;
+
+	--green: #33B020;
+	--green--hover: #2B911B;
+
+	--bg--light: #F3F3F3;
+	--bg--dark: #313131;
+
+	--border: #D4D4D4;
 }
 
+.red {
+	--accent: rgba(211, 47, 47, 1);
+	--accent--hover: rgba(171, 36, 39, 1);
+}
+
+.green {
+	--accent: rgba(51, 176, 32, 1);
+	--accent--hover: rgba(43, 145, 27, 1);
+}
+
+
 ::selection {
-	background-color: $accent;
+	// background-color: var(--accent);
 	color: #fff;
 }
 
@@ -95,7 +124,7 @@ a, button {
 a {
 	&:focus,
 	&:hover {
-		color: $accent;
+		color: var(--accent);
 	}
 }
 
@@ -134,17 +163,17 @@ button {
 		left: 0;
 		height: 2px;
 		width: 8px;
-		background-color: #fff;
+		background-color: var(--accent);
 		transition: all .6s;
 	}
 
 	&:hover,
 	&:focus {
-		color: $accent;
+		color: var(--accent);
 
 		&::before {
 			width: 100%;
-			background-color: $accent;
+			background-color: var(--accent);
 		}
 	}
 }

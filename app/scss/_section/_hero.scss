@@ -65,8 +65,8 @@
 
 			&:hover,
 			&:focus {
-				background-color: $accent;
-				border-color: $accent;
+				background-color: var(--accent);
+				border-color: var(--accent);
 			}
 		}
 
@@ -99,7 +99,7 @@
 		}
 
 		.swiper-pagination-bullet-active {
-			background-color: $accent;
+			background-color: var(--accent);
 		}
 	}
 
@@ -109,7 +109,7 @@
 		width: 100% !important;
 
 		.swiper-scrollbar-drag {
-			background-color: $accent !important;
+			background-color: var(--accent) !important;
 		}
 	}
 

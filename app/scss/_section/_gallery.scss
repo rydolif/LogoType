@@ -44,20 +44,21 @@
 		display: flex;
 		align-items: center;
 		font-size: 18px;
-		color: $accent;
+		color: var(--accent);
 		cursor: pointer;
 
 		&:hover,
 		&:focus {
-			color: $accent--hover;
+			color: var(--accent--hover);
 
 			svg, path {
-				fill: $accent--hover;
+				fill: var(--accent--hover);
 			}
 		}
 
-		svg {
+		svg, path {
 			margin-right: 10px;
+			fill: var(--accent);
 		}
 	}
 

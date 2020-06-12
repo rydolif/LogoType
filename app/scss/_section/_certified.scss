@@ -38,7 +38,7 @@
 
 			&:hover,
 			&:focus {
-				color: $accent;
+				color: var(--accent);
 			}
 		}
 	}

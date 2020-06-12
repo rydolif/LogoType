@@ -22,12 +22,12 @@
 
 		&:hover,
 		&:focus {
-			border: 1px solid $accent;
+			border: 1px solid var(--accent);
 
 			.btn {
 				opacity: 1;
-				background-color: $accent;
-				border-color: $accent;
+				background-color: var(--accent);
+				border-color: var(--accent);
 			}
 		}
 
@@ -49,7 +49,7 @@
 			text-transform: uppercase;
 			padding: 5px 16px;
 			color: $white;
-			background-color: $accent;
+			background-color: var(--accent);
 			border-radius: 20px;
 			font-size: 18px;
 		}
@@ -98,7 +98,7 @@
 			}
 
 			&--sale {
-				color: $accent;
+				color: var(--accent);
 				font-weight: 600;
 			}
 		}
@@ -151,8 +151,8 @@
 
 			&:hover,
 			&:focus {
-				background-color: $accent;
-				border-color: $accent;
+				background-color: var(--accent);
+				border-color: var(--accent);
 
 				&::before {
 					border-color: $white;

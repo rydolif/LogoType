@@ -37,17 +37,22 @@
 			width: 100%;
 			font-size: 18px;
 			font-weight: 500;
-			color: $accent;
+			color: var(--accent);
 			margin-bottom: 15px;
 			cursor: pointer;
 
 			&:hover,
 			&:focus {
-				color: $accent--hover;
+				color: var(--accent--hover);
+
+				svg, path {
+					fill: var(--accent--hover);
+				}
 			}
 
-			svg {
+			svg, path {
 				margin-right: 8px;
+				fill: var(--accent);
 			}
 		}
 	}

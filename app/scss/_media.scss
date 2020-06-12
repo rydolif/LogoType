@@ -39,7 +39,7 @@
 
 	.cards {
 		&__item {
-			border-color: $accent;
+			border-color: var(--accent);
 
 			&_description {
 				margin: 0 10px;
@@ -259,7 +259,6 @@
 			font-size: 14px;
 		}
 	}
-	
 
 	.modal {
 		padding: 30px;
@@ -829,7 +828,7 @@
 		}
 
 		a {
-			border: 1px solid $accent;
+			border: 1px solid var(--accent);
 		}
 	}
 

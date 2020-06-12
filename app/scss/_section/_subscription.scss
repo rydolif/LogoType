@@ -17,7 +17,7 @@
 		font-weight: 600;
 		font-family: $title;
 		font-size: 32px;
-		color: $accent;
+		color: var(--accent);
 		margin-bottom: 10px;
 	}
 
@@ -42,7 +42,7 @@
 
 			&:hover,
 			&:focus {
-				background-color: $accent--hover;
+				background-color: var(--accent--hover);
 			}
 		}
 	}
