@@ -86,4 +86,18 @@
 			}
 		}
 	}
+
+	&--light {
+		background-color: $bg--light;
+
+		.footer__logo {
+			color: $text;
+		}
+
+		.footer__info_info {
+			a {
+				color: $text;
+			}
+		}
+	}
 }
