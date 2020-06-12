@@ -31,12 +31,10 @@
 
 			&:hover,
 			&:focus {
-
 				svg {
 					background-color: $accent;
 					padding: 3px;
 				}
-
 				svg, path {
 					fill: $white;
 				}

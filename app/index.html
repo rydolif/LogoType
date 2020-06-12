@@ -17,7 +17,7 @@
 
 <body class="accent--red">
 
-	<header class="header">
+	<header class="header header--white">
 		<div class="header__container container">
 
 			<div class="header__hamburger">
@@ -58,7 +58,10 @@
 		<div class="hero__slider swiper-container">
 			<div class="swiper-wrapper">
 
-				<div class="hero__slide hero__slide--center swiper-slide" style="background-image:url(img/hero.jpg)">
+				<div class="hero__slide hero__slide--center swiper-slide">
+					<video loop autoplay muted>
+						<source src="img/video.mp4" type="video/mp4" ><!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->
+					</video>
 					<div class="hero__container container">
 						<div class="hero__content">
 							<p class="hero__title">Новая коллекцию</p>
@@ -70,6 +73,16 @@
 							</p>
 							<a href="#" class="btn">Заказать звонок</a>
 						</div>
+					</div>
+					<div class="hero__video">
+						<div id="controls" class="hidden">
+							<a id="playBtn" class="hero__video_play">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M14.4286 22H20.1429V2H14.4286V22ZM3 22H8.71429V2H3V22Z" fill="white"/>
+								</svg>
+							</a>
+						</div>
+						<div class="hero__pagination swiper-pagination"></div>
 					</div>
 				</div>
 
@@ -86,6 +99,7 @@
 							<a href="#" class="btn">Заказать звонок</a>
 						</div>
 					</div>
+					<div class="hero__pagination swiper-pagination"></div>
 				</div>
 
 				<div class="hero__slide swiper-slide" style="background-image:url(img/hero3.jpg)">
@@ -101,6 +115,7 @@
 							<a href="#" class="btn">Заказать звонок</a>
 						</div>
 					</div>
+					<div class="hero__pagination swiper-pagination"></div>
 				</div>
 
 				<div class="hero__slide swiper-slide" style="background-image:url(img/hero4.jpg)">
@@ -116,11 +131,11 @@
 							<a href="#" class="btn">Заказать звонок</a>
 						</div>
 					</div>
+					<div class="hero__pagination swiper-pagination"></div>
 				</div>
 
 			</div>
 
-			<div class="hero__pagination swiper-pagination"></div>
 			<div class="hero__button">
 				<div class="hero__button_prev"></div>
 				<div class="hero__button_next"></div>

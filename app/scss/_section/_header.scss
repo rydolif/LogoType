@@ -98,8 +98,45 @@
 	&--active {
 		padding: 10px 0;
 		background: rgba($bg--dark, 1);
-		box-shadow: 0 0 7px 0 rgba($white, .5)
+		box-shadow: 0 0 7px 0 rgba($white, .5);
+	}
+
+	&--white {
+		background-color: transparent;
+		color: $text;
+
+		.hamburger {
+			span {
+				background-color: $text;
+			}
+		}
+
+		a {
+			color: $text;
+			&::before {
+				background-color: $text;
+			}
+		}
+
+		.header__info p a {
+			color: $text;
+
+			&:hover,
+			&:focus {
+				color: var(--accent);
+			}
+		}
+
+		.header__nav--active {
+			background-color: #ffffff;
+			box-shadow: 0 7px 7px 0 rgba($text, .2);
+		}
 	}
 
 }
 
+.header--white.header--active,
+.header--white.header--menu {
+	background-color: $white;
+	box-shadow: 0 7px 7px 0 rgba($text, .2);
+}

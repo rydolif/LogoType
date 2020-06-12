@@ -377,6 +377,14 @@
 	.doubt__list--big .doubt__list_item {
 		width: 48%;
 	}
+
+	.benefits__item--link {
+		width: 19%;
+
+		svg {
+			width: 100%;
+		}
+	}
 }
 
 
@@ -644,6 +652,19 @@
 		}
 	}
 
+	.benefits {
+		&__container {
+			justify-content: space-around;
+		}
+		&__item--link {
+			width: 31%;
+			margin-bottom: 15px;
+	
+			svg {
+				width: 100%;
+			}
+		}
+	}
 }
 
 
@@ -812,7 +833,6 @@
 
 @media only screen and (max-width : 480px) {
 	.header	{
-
 		&__nav {
 			li {
 				width: 100%;
@@ -926,5 +946,20 @@
 
 	.doubt__list--big .doubt__list_item {
 		width: 100%;
+	}
+	
+	.benefits {
+		&__item--link {
+			width: 48%;
+			margin-bottom: 15px;
+			display: flex;
+			justify-content: center;
+	
+			svg {
+				width: 100%;
+				max-width: 120px;
+				max-height: 25px;
+			}
+		}
 	}
 }
