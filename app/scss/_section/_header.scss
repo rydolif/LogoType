@@ -28,27 +28,6 @@
 		font-weight: 600;
 	}
 
-	&__nav {
-		font-size: 18px;
-		font-weight: 600;
-
-		ul {
-			@extend .list;
-		}
-
-		li {
-			margin-right: 30px;
-
-			&:last-child {
-				margin-right: 0;
-			}
-		}
-
-		a {
-			@extend .link;
-		}
-	}
-
 	&__info {
 		display: flex;
 		align-items: center;
@@ -92,6 +71,31 @@
 			&:focus {
 				background-color: var(--accent--hover);
 			}
+		}
+	}
+
+	&__nav {
+		font-size: 18px;
+		font-weight: 600;
+
+		&_info {
+			display: none;
+		}
+
+		ul {
+			@extend .list;
+		}
+
+		li {
+			margin-right: 30px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		a {
+			@extend .link;
 		}
 	}
 

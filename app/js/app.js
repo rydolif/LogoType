@@ -240,6 +240,11 @@ document.addEventListener("DOMContentLoaded", function() {
 		var id  = $(this).attr('href'),
 				top = $(id).offset().top;
 		$('body,html').animate({scrollTop: top - 90}, 'slow', 'swing');
+	//--------------------закриття меню при кліку на ссилку якоря--------------------
+     $('.hamburger').removeClass('hamburger--active');
+     $('.header--menu').removeClass('header--menu');
+     $('.header--active').removeClass('header--active');
+     $('.header__nav--active').removeClass('header__nav--active');
 	});
 
 //------------------------------adout-more--------------------------

@@ -17,7 +17,7 @@
 
 <body class="accent--green">
 
-	<header class="header">
+	<header class="header header--white">
 		<div class="header__container container">
 
 			<div class="header__hamburger">
@@ -32,11 +32,22 @@
 
 			<nav class="header__nav nav">
 				<ul>
-					<li><a href="#">Преимущества</a></li>
-					<li><a href="#">Каталог</a></li>
-					<li><a href="#">О компании</a></li>
-					<li><a href="#">Контакты</a></li>
+					<li class="click"><a href="#benefits">Преимущества</a></li>
+					<li class="click"><a href="#catalog">Каталог</a></li>
+					<li class="click"><a href="#about">О компании</a></li>
+					<li class="click"><a href="#contacts">Контакты</a></li>
 				</ul>
+				<div class="header__info header__nav_info">
+					<p>
+						<a href="tel:+78001234567" class="">+7 800 123-45-67</a>
+						<span>Пн. - Пт. с 9:00 до 21 :00</span>
+					</p>
+					<a href="#" class="header__info_btn">
+						<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+							<path d="M15.1111 11.1111C14.0045 11.1111 12.9333 10.9333 11.9378 10.6045C11.6311 10.5067 11.28 10.5778 11.0356 10.8223L9.08004 12.7822C6.56004 11.5022 4.50225 9.44446 3.22225 6.92892L5.17779 4.96446C5.42225 4.72 5.49333 4.36892 5.39558 4.06225C5.06671 3.06671 4.88892 1.99558 4.88892 0.888917C4.88888 0.395542 4.49333 0 4 0H0.888875C0.4 0 0 0.395542 0 0.888875C0 9.23554 6.76446 16 15.1111 16C15.6045 16 16 15.6045 16 15.1111V12C16 11.5067 15.6045 11.1111 15.1111 11.1111Z" fill="white"/>
+							</svg>
+					</a>
+				</div>
 			</nav>
 
 			<div class="header__info">
@@ -130,7 +141,7 @@
 		</div>
 	</div>
 
-	<div class="benefits bg--light">
+	<div class="benefits bg--light" id="benefits">
 		<div class="benefits__container container">
 			<div class="benefits__item">
 				<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
@@ -349,7 +360,7 @@
 		</div>
 	</div>
 
-	<div class="catalog tabs">
+	<div class="catalog tabs" id="catalog">
 		<div class="container">
 
 			<p class="cards__title">Каталог товаров</p>
@@ -1917,7 +1928,7 @@
 		</div>
 	</div>
 
-	<div class="about bg--light">
+	<div class="about bg--light" id="about">
 		<div class="container">
 
 			<p class="about__title">О нашей компании</p>
@@ -2024,7 +2035,7 @@
 		</div>
 	</div>
 
-	<div class="contacts bg--light">
+	<div class="contacts bg--light" id="contacts">
 		<div class="container">
 
 			<h2 class="contacts__title">Контакты</h2>

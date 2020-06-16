@@ -210,8 +210,6 @@
 				top: 60px;
 			}
 		}
-
-
 	}
 
 	.hero {
@@ -414,14 +412,43 @@
 
 		&__nav {
 			top: -400px;
+			display: flex;
+			flex-direction: column;
+			overflow: auto;
 
 			li {
-				width: 48%;
-				margin-bottom: 25px;
-				margin-right: 2%;
+				width: 100%;
+				margin-bottom: 40px;
+				margin-right: 0;
 
 				&:last-child {
-					margin-right: 2%;
+					margin-right: 0;
+				}
+
+				a {
+					display: block;
+					max-width: 270px;
+					margin: 0 auto;
+					font-size: 18px;
+					font-weight: 600;
+				}
+			}
+
+			&_info {
+				display: flex;
+				justify-content: center;
+				width: 100%;
+				padding-top: 25px;
+				border-top: 1px solid $text--light;
+
+				a {
+					&::before {
+						display: none;
+					}
+				}
+
+				p {
+					display: block;
 				}
 			}
 
@@ -834,16 +861,6 @@
 @media only screen and (max-width : 480px) {
 	.header	{
 		&__nav {
-			li {
-				width: 100%;
-				margin-bottom: 25px;
-				margin-right: 0;
-		
-				&:last-child {
-					margin-right: 0;
-				}
-			}
-		
 			&--active {
 				top: 50px;
 			}
@@ -851,7 +868,6 @@
 
 	}
 
-	
 	.hero {
 
 		&__title {
