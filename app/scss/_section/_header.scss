@@ -104,6 +104,7 @@
 	&--white {
 		background-color: transparent;
 		color: $text;
+		background-color:  rgba($white, .8);
 
 		.hamburger {
 			span {

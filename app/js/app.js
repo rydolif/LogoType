@@ -234,7 +234,13 @@ document.addEventListener("DOMContentLoaded", function() {
 			$(".gallery__more span").html('Cкрыть фото');
 		}
 	});
-	
+
+	$(".click").on("click","a", function (event) {
+		event.preventDefault();
+		var id  = $(this).attr('href'),
+				top = $(id).offset().top;
+		$('body,html').animate({scrollTop: top - 90}, 'slow', 'swing');
+	});
 
 //------------------------------adout-more--------------------------
 	$(".about__text_none").css({"display" : "none"});
@@ -259,7 +265,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	}, "Введите Ваш телефон");
 
 
-//------------------------------mask--------------------------
+//------------------------------video hero--------------------------
 	var videoEl = document.getElementsByTagName('video')[0],
 			playBtn = document.getElementById('playBtn'),
 			vidControls = document.getElementById('controls'),
