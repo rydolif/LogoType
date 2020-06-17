@@ -510,7 +510,8 @@
 	.gallery,
 	.about,
 	.video,
-	.question {
+	.question,
+	.contacts  {
 		padding: 40px 0;
 	}
 
@@ -666,6 +667,10 @@
 
 		&__title {
 			margin-bottom: 20px;
+		}
+
+		&__map {
+			height: 350px;
 		}
 	}
 
@@ -948,6 +953,9 @@
 			img {
 				display: none;
 			}
+		}
+		&__map {
+			height: 300px;
 		}
 	}
 
