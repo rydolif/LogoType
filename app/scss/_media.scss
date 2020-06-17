@@ -395,6 +395,11 @@
 		font-size: 26px;
 	}
 
+	.btn {
+		height: 40px;
+		font-size: 16px;
+	}
+
 	label {
 		font-size: 14px;
 		margin-bottom: 2px;
@@ -609,19 +614,43 @@
 	.question__form {
 		max-width: 320px;
 		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
 
 		&_line {
 			width: 100%;
 			margin-right: 0;
+			margin-bottom: 15px;
+
+			label {
+				font-size: 18px;
+				margin-bottom: 10px;
+			}
 		}
 
 		&_btn {
 			width: 100%;
+			margin: 25px auto 0 auto;
+			max-width: 150px;
+			order: 1;
+		}
+
+		button {
+			height: 40px;
+			font-size: 16px;
 		}
 	}
 
 	.policy {
+		position: relative;
+		padding-left: 25px;
 		display: inline-block;
+
+		svg {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
 	}
 
 	.contacts {
@@ -641,16 +670,18 @@
 	}
 
 	.footer {
+		padding: 25px 25px 0;
 
 		&__logo {
-			margin-bottom: 10px;
+			margin-bottom: 35px;
 			text-align: center;
 		}
 
 		&__soc {
-			margin-bottom: 15px;
+			width: 100%;
+			padding-bottom: 35px;
+			border-bottom: 1px solid rgba(157, 157, 157, 0.3);
 		}
-
 
 		&__info,
 		&__copy {
@@ -658,11 +689,28 @@
 			align-items: center;
 			
 			&_info {
+				padding-top: 25px;
 				justify-content: center;
 			}
+		}
+
+		&__copy {
+			padding: 25px 0;
 
 			p {
-				margin-bottom: 10px;
+				margin-bottom: 15px;
+
+				&:nth-child(1) {
+					order: 2;
+				}
+				&:nth-child(2) {
+					order: 1;
+				}
+				&:last-child {
+					padding-bottom: 25px;
+					margin-bottom: 25px;
+					border-bottom: 1px solid rgba(157, 157, 157, 0.3);
+				}
 			}
 		}
 		
