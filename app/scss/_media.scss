@@ -406,7 +406,7 @@
 	}
 
 	.header {
-		padding: 5px 0;
+		padding: 15px 0;
 
 		&__info {
 			justify-content: flex-end;
@@ -458,7 +458,7 @@
 			}
 
 			&--active {
-				top: 50px;
+				top: 70px;
 			}
 		}
 
@@ -760,28 +760,6 @@
 	}
 
 	.hero {
-		text-align: center;
-
-		&__title {
-			font-size: 36px;
-			text-align: center;
-		}
-
-		&__text {
-			text-align: center;
-		}
-
-		.btn {
-			margin: 0 auto;
-		}
-	}
-
-	.cards__text {
-		font-size: 14px;
-		text-align: center;
-	}
-
-	.hero {
 
 		&__content {
 			padding: 120px 0;
@@ -791,6 +769,26 @@
 			display: none;
 		}
 
+		&__title {
+			font-size: 36px;
+			text-align: left;
+		}
+
+		&__text {
+			text-align: left;
+			margin-bottom: 25px;
+			font-size: 14px;
+		}
+
+		.btn {
+			max-width: 190px;
+			min-width: auto;
+		}
+	}
+
+	.cards__text {
+		font-size: 14px;
+		text-align: center;
 	}
 
 	.catalog__tabs a {
@@ -915,19 +913,20 @@
 	.header	{
 		&__nav {
 			&--active {
-				top: 50px;
+				top: 70px;
 			}
 		}
 
 	}
 
 	.hero {
-
 		&__title {
-			font-size: 30px;
+			font-size: 32px;
+			margin-bottom: 15px;
 		}
+
 		&__content {
-			padding: 65px 0;
+			padding: 110px 0;
 		}
 	}
 
