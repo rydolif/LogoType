@@ -65,7 +65,14 @@
 		}
 
 		&_description {
+			display: block;
 			margin: 0 24px;
+			color: $text;
+
+			&:hover,
+			&:focus {
+				color: $text;
+			}
 		}
 
 		&_name {

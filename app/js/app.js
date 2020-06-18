@@ -1,5 +1,42 @@
 document.addEventListener("DOMContentLoaded", function() {
 
+//---------------------------modal-tabs-----------------------
+	$('.modal--cards__tabs_item').hide();
+	$('.modal--cards__tabs_item:first').show();
+	$('.modal--cards__tabs ul a:first').addClass('active');
+	$('.modal--cards__tabs ul a').click(function(event){
+		event.preventDefault();
+		$('.modal--cards__tabs ul a').removeClass('active');
+		$(this).addClass('active');
+		$('.modal--cards__tabs_item').hide();
+		var selectTab = $(this).attr('href');
+		$(selectTab).fadeIn();
+	});
+
+//------------------------slider-modal-----------------------------------
+	$(".modal").each(function(index, el) {
+		$(el).addClass('modal-' + index);
+		
+		var galleryThumbs = new Swiper('.modal-' + index + ' .gallery-thumbs', {
+			spaceBetween: 15,
+			slidesPerView: 4,
+			loop: true,
+			freeMode: true,
+			loopedSlides: 5, //looped slides should be the same
+			watchSlidesVisibility: true,
+			watchSlidesProgress: true,
+		});
+		var galleryTop = new Swiper('.modal-' + index + ' .gallery-top', {
+			spaceBetween: 15,
+			loop:true,
+			loopedSlides: 5, //looped slides should be the same
+			thumbs: {
+				swiper: galleryThumbs,
+			},
+		});
+
+	});
+
 //------------------------slider-hero-----------------------------------
 	var swiper = new Swiper('.hero__slider', {
 		slidesPerView: 1,
@@ -78,34 +115,34 @@ document.addEventListener("DOMContentLoaded", function() {
     $(el).addClass('tabs__wrap-' + index);
 
 		var swiper = new Swiper('.tabs__wrap-' + index + ' .catalog__slider', {
-		slidesPerView: 1,
-		slidesPerColumn: 1,
-		spaceBetween: 15,
-		pagination: {
-			el: '.tabs__wrap-' + index + ' .catalog__nav_pagination',
-			type: 'fraction',
-		},
-		navigation: {
-			nextEl: '.tabs__wrap-' + index + ' .catalog__nav_next',
-			prevEl: '.tabs__wrap-' + index + ' .catalog__nav_prev',
-		},
-		breakpoints: {
-			400: {
-				slidesPerView: 2,
+			slidesPerView: 1,
+			slidesPerColumn: 1,
+			spaceBetween: 15,
+			pagination: {
+				el: '.tabs__wrap-' + index + ' .catalog__nav_pagination',
+				type: 'fraction',
 			},
-			767: {
-				slidesPerView: 3,
+			navigation: {
+				nextEl: '.tabs__wrap-' + index + ' .catalog__nav_next',
+				prevEl: '.tabs__wrap-' + index + ' .catalog__nav_prev',
 			},
-			992: {
-				slidesPerView: 3,
-				slidesPerColumn: 2,
-			},
-			1200: {
-				slidesPerView: 4,
-				slidesPerColumn: 2,
+			breakpoints: {
+				400: {
+					slidesPerView: 2,
+				},
+				767: {
+					slidesPerView: 3,
+				},
+				992: {
+					slidesPerView: 3,
+					slidesPerColumn: 2,
+				},
+				1200: {
+					slidesPerView: 4,
+					slidesPerColumn: 2,
+				}
 			}
-		}
-	});
+		});
 
   });
 
