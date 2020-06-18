@@ -493,9 +493,16 @@
 			border-color: $border;
 			height: 50px;
 			line-height: 50px;
+			border-radius: 4px;
+			padding: 0 15px;
 
 			&::placeholder {
 				line-height: 50px;
+			}
+
+			&:hover,
+			&:focus {
+				border-color: var(--accent);
 			}
 		}
 

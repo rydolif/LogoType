@@ -3,6 +3,17 @@
 .certified {
 	@extend .reviews;
 
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		width: 31%;
+		margin-bottom: 30px;
+	}
+
 	&__slider {
 		padding: 15px;
 	}

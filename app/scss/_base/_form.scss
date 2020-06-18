@@ -6,6 +6,7 @@ input, textarea, select{
 	box-shadow: none;
 	// -webkit-appearance: none;
 	background-color: transparent;
+	transition: all .6s;
 
 	&:focus:required:invalid{
 		border-color: var(--accent);

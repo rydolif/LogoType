@@ -33,6 +33,13 @@
 
 		input {
 			height: 50px;
+			border-color: $border;
+			border-radius: 4px;
+
+			&:hover,
+			&:focus {
+				border-color: var(--accent);
+			}
 		}
 
 		button {
