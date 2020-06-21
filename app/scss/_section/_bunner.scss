@@ -71,19 +71,18 @@
 		line-height: 1.2;
 	}
 
-	&__time {
+	&__time { 
 		position: absolute;
 		top: 20px;
 		left: 50%;
 		width: 50vw;
-		background-position: center;
 		font-family: $title;
 		font-size: 24px;
 		transform: rotate(-2deg);
 		background-image: url(../img/bunner--red.png);
 		background-repeat: no-repeat;
 		background-size: contain;
-		background-position: center;
+		background-position: left center;
 		padding-left: 35px;
 
 		&_title {
