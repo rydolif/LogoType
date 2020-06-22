@@ -39,7 +39,7 @@
 
 	.cards {
 		&__item {
-			border-color: var(--accent);
+			border-color: var(--accent) !important;
 
 			&_description {
 				margin: 0 10px;
@@ -54,6 +54,8 @@
 
 			&_btn {
 				opacity: 1;
+				background-color: var(--accent) !important;
+				color: $white !important;
 			}
 		}
 
