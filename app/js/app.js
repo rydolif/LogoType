@@ -34,7 +34,6 @@ document.addEventListener("DOMContentLoaded", function() {
 				swiper: galleryThumbs,
 			},
 		});
-
 	});
 
 //------------------------slider-hero-----------------------------------

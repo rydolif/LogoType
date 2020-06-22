@@ -266,6 +266,14 @@
 				font-size: 18px;
 				margin-bottom: 25px;
 
+				a {
+					color: var(--accent);
+
+					&:hover {
+						color: var(--accent--hover);
+					}
+				}
+
 				svg {
 					margin-right: 10px;
 				}

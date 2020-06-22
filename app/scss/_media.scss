@@ -516,7 +516,7 @@
 			}
 
 			&--active {
-				top: 70px !important;
+				// top: 70px !important;
 			}
 		}
 
@@ -828,6 +828,23 @@
 			}
 		}
 	}
+
+	.header__nav_info {
+		width: 100% !important;
+		justify-content: center !important;
+	}
+	.header--active.header--center-logo .header__nav {
+		top: 50px !important;
+	}
+
+	.cards__slider--three-block .cards__item_btn {
+			right: -10px;
+			bottom: -2px;
+	}
+
+	.header--center-logo .header__nav--active {
+		top: 70px;
+	}
 }
 
 
@@ -950,7 +967,7 @@
 		&__time {
 			position: relative;
 			left: 0;
-			transform: translate(0, 0) rotate(0deg);
+			transform: translate(0, 0) rotate(-2deg);
 			width: 100%;
 			background: none !important;
 			text-align: center;
@@ -980,7 +997,6 @@
 				transform: rotate(0deg);
 			}
 		}
-
 
 		&--sale {
 			.bunner__time::before {
