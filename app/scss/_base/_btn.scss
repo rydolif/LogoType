@@ -17,11 +17,17 @@
 	line-height: 1.2;
 
 
-	&:hover,
-	&:focus {
+	&:hover {
 		border: 1px solid var(--accent--hover);
 		background: var(--accent--hover);
 		color: $white;
+	}
+
+	&:active {
+		border: 1px solid var(--accent--hover);
+		background: var(--accent--hover);
+		color: $white;
+		transform: translate(3px, 3px)
 	}
 }
 

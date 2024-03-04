@@ -262,7 +262,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		if ($(this).hasClass('gallery__more--active')) {
 			$(".gallery__item").slice(9).slideUp("slow");
 			$(".gallery__more--active").removeClass("gallery__more--active");
-			$(".gallery__more span").html('Еще фото');
+			$(".gallery__more span").html('More photos');
 		}
 		else {
 			$(".gallery__item").slice(0).slideDown("slow");
