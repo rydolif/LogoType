@@ -289,7 +289,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		if ($(this).hasClass('about__text_more--active')) {
 			$(".about__text_none").slideUp("slow");
 			$(".about__text_more--active").removeClass("about__text_more--active");
-			$(".about__text_more span").html('Читать полностью');
+			$(".about__text_more span").html('Read completely');
 		}
 		else {
 			$(".about__text_none").slideDown("slow");
