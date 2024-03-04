@@ -303,7 +303,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   jQuery.validator.addMethod("phoneno", function(phone_number, element) {
      return this.optional(element) || phone_number.match(/\+[0-9]{1}\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}/);
-	}, "Введите Ваш телефон");
+	}, "Введите Yourтелефон");
 
 
 //------------------------------video hero--------------------------
